@@ -9,44 +9,42 @@
 <meta property="og:description" content="ხარისხიანი ავტომობილები ბათუმში. დარეკეთ: +995 593 71 63 73">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://avtoskolaensa-arch.github.io/Batumiauto/">
-<meta property="og:image" content="https://avtoskolaensa-arch.github.io/Batumiauto/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:locale" content="ka_GE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ბათუმი ავტო — ავტომობილები ბათუმში">
-<meta name="twitter:description" content="ხარისხიანი ავტომობილები ბათუმში. დარეკეთ: +995 593 71 63 73">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23d63a1a'/%3E%3Cpath d='M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z' fill='white'/%3E%3Ccircle cx='28' cy='74' r='10' fill='%23fff'/%3E%3Ccircle cx='72' cy='74' r='10' fill='%23fff'/%3E%3Ccircle cx='28' cy='74' r='5' fill='%23d63a1a'/%3E%3Ccircle cx='72' cy='74' r='5' fill='%23d63a1a'/%3E%3Crect x='36' y='42' width='28' height='16' rx='4' fill='%23d63a1a' opacity='0.5'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23d63a1a'/%3E%3Cpath d='M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z' fill='white'/%3E%3Ccircle cx='28' cy='74' r='10' fill='%23fff'/%3E%3Ccircle cx='72' cy='74' r='10' fill='%23fff'/%3E%3Ccircle cx='28' cy='74' r='5' fill='%23d63a1a'/%3E%3Ccircle cx='72' cy='74' r='5' fill='%23d63a1a'/%3E%3Crect x='36' y='42' width='28' height='16' rx='4' fill='%23d63a1a' opacity='0.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --bg:#f7f6f3;--white:#ffffff;--surface:#f0eeea;--border:#e2ddd7;
+  --bg:#f7f6f3;--white:#fff;--surface:#f0eeea;--border:#e2ddd7;
   --text:#1a1a1a;--text2:#5a5550;--text3:#9a9590;
   --accent:#d63a1a;--accent-light:#fdf1ee;--accent-hover:#b82e12;
-  --green:#1a8a4a;--green-border:#b8e8cc;
+  --green:#1a8a4a;--green-bg:#eaf7f0;--green-border:#b8e8cc;
+  --blue:#1a5eb8;--blue-bg:#e8f0fc;--blue-border:#b8ccee;
+  --amber:#7a5010;--amber-bg:#fdf5e0;--amber-border:#e8d898;
+  --purple:#6b35b8;--purple-bg:#f0eafc;--purple-border:#d0b8ee;
   --sold:#8a6a1a;--sold-bg:#fdf8ec;--sold-border:#e8d898;
   --radius:14px;--shadow:0 2px 16px rgba(0,0,0,0.08);--shadow-lg:0 8px 40px rgba(0,0,0,0.13);
 }
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans Georgian',sans-serif;font-size:15px;line-height:1.6;}
 
+/* NAV */
 nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.logo-icon{width:40px;height:40px;flex-shrink:0;}
+.logo-icon{width:38px;height:38px;flex-shrink:0;}
 .logo-text{display:flex;flex-direction:column;line-height:1.1;}
-.logo-text-top{font-weight:700;font-size:16px;color:var(--text);letter-spacing:-0.3px;}
-.logo-text-bottom{font-weight:700;font-size:16px;color:var(--accent);letter-spacing:-0.3px;}
+.logo-text .t1{font-weight:700;font-size:15px;color:var(--text);}
+.logo-text .t2{font-weight:700;font-size:15px;color:var(--accent);}
 .nav-call{display:flex;align-items:center;gap:7px;background:var(--accent);color:#fff;text-decoration:none;padding:9px 18px;border-radius:100px;font-weight:600;font-size:14px;transition:background 0.18s;white-space:nowrap;}
 .nav-call:hover{background:var(--accent-hover);}
 .nav-call svg{width:15px;height:15px;fill:#fff;flex-shrink:0;}
 
+/* HERO */
 .hero{background:var(--white);border-bottom:1px solid var(--border);padding:44px 20px 36px;text-align:center;}
-.hero-logo{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px;}
-.hero-logo-icon{width:72px;height:72px;}
-.hero-title{font-size:clamp(32px,8vw,56px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:10px;}
+.hero-logo-icon{width:68px;height:68px;margin-bottom:14px;}
+.hero-title{font-size:clamp(30px,8vw,54px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:10px;}
 .hero-title span{color:var(--accent);}
 .hero-sub{color:var(--text2);font-size:15px;margin-bottom:28px;}
 .hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;padding:14px 32px;border-radius:100px;font-weight:600;font-size:16px;transition:background 0.18s,transform 0.15s;box-shadow:0 4px 16px rgba(214,58,26,0.25);}
@@ -56,22 +54,27 @@ nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,0.96);backdrop-
 .stat-n{font-size:30px;font-weight:700;color:var(--accent);line-height:1;}
 .stat-l{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1.2px;margin-top:3px;}
 
+/* CALL BANNER */
 .call-banner{background:var(--accent);padding:16px 20px;text-align:center;}
 .call-banner a{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-size:clamp(15px,4vw,20px);font-weight:600;}
 .call-banner svg{width:18px;height:18px;fill:#fff;flex-shrink:0;}
 
+/* MAIN */
 main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:12px;}
 .section-title{font-size:22px;font-weight:700;}
 .section-count{font-size:13px;color:var(--text3);background:var(--surface);border:1px solid var(--border);padding:4px 14px;border-radius:100px;}
 
+/* FILTERS */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
 .f-btn{padding:7px 16px;border-radius:100px;border:1.5px solid var(--border);background:var(--white);color:var(--text2);font-family:'Noto Sans Georgian',sans-serif;font-size:13px;cursor:pointer;transition:all 0.18s;font-weight:500;}
 .f-btn:hover{border-color:var(--accent);color:var(--accent);}
 .f-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
 
+/* GRID */
 .cars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;}
 
+/* CARD */
 .car-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:transform 0.22s,box-shadow 0.22s,border-color 0.18s;display:flex;flex-direction:column;}
 .car-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d0ccc6;}
 .car-card.sold{opacity:0.72;}
@@ -84,25 +87,46 @@ main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 .img-placeholder svg{width:40px;height:40px;opacity:0.3;}
 
 .status-badge{position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:100px;font-size:12px;font-weight:600;backdrop-filter:blur(8px);}
-.status-active{background:rgba(237,250,243,0.95);color:var(--green);border:1px solid var(--green-border);}
-.status-sold{background:rgba(253,248,236,0.95);color:var(--sold);border:1px solid var(--sold-border);}
+.status-active{background:rgba(234,247,240,0.97);color:var(--green);border:1px solid var(--green-border);}
+.status-sold{background:rgba(253,248,236,0.97);color:var(--sold);border:1px solid var(--sold-border);}
 .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
 .dot-active{background:var(--green);animation:blink 1.6s ease-in-out infinite;}
 .dot-sold{background:var(--sold);}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0.3;};}
 
 .sold-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;}
-.sold-stamp{background:rgba(253,248,236,0.96);color:var(--sold);border:2px solid var(--sold-border);font-size:20px;font-weight:700;padding:10px 24px;border-radius:8px;transform:rotate(-8deg);letter-spacing:1px;}
-.photo-icon{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,0.5);color:#fff;padding:4px 10px;border-radius:100px;font-size:11px;display:flex;align-items:center;gap:4px;}
+.sold-stamp{background:rgba(253,248,236,0.97);color:var(--sold);border:2px solid var(--sold-border);font-size:20px;font-weight:700;padding:10px 24px;border-radius:8px;transform:rotate(-8deg);letter-spacing:1px;}
+.photo-icon{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,0.52);color:#fff;padding:4px 10px;border-radius:100px;font-size:11px;display:flex;align-items:center;gap:4px;}
 .photo-icon svg{width:12px;height:12px;fill:#fff;}
 
 .card-body{padding:18px;flex:1;display:flex;flex-direction:column;}
-.card-name{font-size:18px;font-weight:700;margin-bottom:2px;}
-.card-year{font-size:13px;color:var(--text3);margin-bottom:14px;}
-.card-specs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+.card-name{font-size:17px;font-weight:700;margin-bottom:14px;line-height:1.3;}
+
+/* TAGS — myauto style */
+.tags-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:8px;font-size:12px;font-weight:600;line-height:1;}
+.tag svg{width:13px;height:13px;flex-shrink:0;}
+.tag-green{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border);}
+.tag-blue{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-border);}
+.tag-amber{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border);}
+.tag-purple{background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-border);}
+.tag-gray{background:var(--surface);color:var(--text2);border:1px solid var(--border);}
+
+.card-specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.spec-item{display:flex;flex-direction:column;gap:1px;}
 .spec-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;}
 .spec-v{font-size:13px;font-weight:600;}
-.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--border);margin-top:auto;}
+
+/* VIN on card */
+.vin-row{display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin-bottom:12px;gap:8px;}
+.vin-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:1px;}
+.vin-code{font-size:12px;font-weight:600;font-family:monospace;letter-spacing:0.5px;color:var(--text);word-break:break-all;}
+.vin-copy{flex-shrink:0;background:var(--accent);border:none;color:#fff;width:30px;height:30px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.15s;}
+.vin-copy:hover{background:var(--accent-hover);}
+.vin-copy svg{width:14px;height:14px;fill:#fff;}
+.vin-copy.copied{background:var(--green);}
+
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--border);margin-top:auto;}
 .card-price{font-size:22px;font-weight:700;color:var(--accent);}
 .card-sold-price{font-size:16px;font-weight:700;color:var(--sold);text-decoration:line-through;}
 .call-btn{display:flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:9px 16px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;transition:background 0.18s;border:none;cursor:pointer;font-family:'Noto Sans Georgian',sans-serif;}
@@ -110,10 +134,12 @@ main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 .call-btn svg{width:13px;height:13px;fill:#fff;}
 .sold-label{font-size:13px;font-weight:600;color:var(--sold);}
 
+/* LOADING */
 .loading-wrap{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text3);}
 .spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite;margin:0 auto 14px;}
 @keyframes spin{to{transform:rotate(360deg);}}
 
+/* MODAL */
 .modal-bg{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.55);display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.25s;}
 @media(min-width:640px){.modal-bg{align-items:center;padding:20px;}}
 .modal-bg.open{opacity:1;pointer-events:all;}
@@ -121,48 +147,54 @@ main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 @media(min-width:640px){.modal{border-radius:20px;max-height:92vh;}}
 .modal-bg.open .modal{transform:translateY(0);}
 
+/* GALLERY */
 .gallery{position:relative;background:#111;flex-shrink:0;}
 .g-main-wrap{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;cursor:zoom-in;}
-.g-main-img{width:100%;height:100%;object-fit:cover;transition:opacity 0.25s;}
+.g-main-img{width:100%;height:100%;object-fit:cover;}
 .g-placeholder{width:100%;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:var(--text3);background:var(--surface);}
 .g-placeholder svg{width:48px;height:48px;opacity:0.25;}
 .g-nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.9);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;color:var(--text);box-shadow:var(--shadow);z-index:2;transition:background 0.15s;}
 .g-nav:hover{background:#fff;}
 .g-prev{left:10px;}.g-next{right:10px;}
 .g-counter{position:absolute;bottom:12px;right:14px;background:rgba(0,0,0,0.6);color:#fff;padding:3px 10px;border-radius:100px;font-size:12px;}
-
 .thumbs-row{display:flex;gap:5px;padding:8px 12px;background:var(--surface);overflow-x:auto;scrollbar-width:none;flex-shrink:0;}
 .thumbs-row::-webkit-scrollbar{display:none;}
 .thumb{width:64px;height:48px;flex-shrink:0;object-fit:cover;border-radius:7px;cursor:pointer;border:2.5px solid transparent;transition:border-color 0.15s,opacity 0.15s;opacity:0.65;}
 .thumb.active{border-color:var(--accent);opacity:1;}
 .thumb:hover{opacity:1;}
 
+/* MODAL BODY */
 .modal-body{padding:20px 20px 28px;overflow-y:auto;flex:1;}
-.modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;}
-.modal-name{font-size:clamp(20px,5vw,28px);font-weight:700;line-height:1.2;}
+.modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:6px;}
+.modal-name{font-size:clamp(18px,5vw,26px);font-weight:700;line-height:1.2;}
 .modal-close{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--border);background:var(--surface);font-size:18px;color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.15s;}
 .modal-close:hover{background:var(--border);}
-.modal-price-row{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap;}
-.modal-price{font-size:28px;font-weight:700;color:var(--accent);}
+.modal-price-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+.modal-price{font-size:26px;font-weight:700;color:var(--accent);}
 .modal-status-badge{display:flex;align-items:center;gap:5px;font-size:13px;font-weight:600;}
+.modal-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
 .modal-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px;}
 @media(min-width:480px){.modal-specs{grid-template-columns:repeat(3,1fr);}}
 .m-spec{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
 .m-spec .spec-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;}
 .m-spec .spec-v{font-size:14px;font-weight:600;}
-.modal-tags-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
-.tag{padding:4px 10px;border-radius:100px;font-size:11px;font-weight:600;}
-.tag-green{background:#e8f8ef;color:#1a6a3a;border:1px solid #b8e8cc;}
-.tag-blue{background:#e8f0fc;color:#1a4a9a;border:1px solid #b8ccee;}
-.tag-amber{background:#fdf5e0;color:#7a5010;border:1px solid #e8d898;}
+
+/* VIN in modal */
+.modal-vin{display:flex;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;gap:12px;margin-bottom:16px;}
+.modal-vin-info{flex:1;}
+.modal-vin-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;}
+.modal-vin-code{font-size:14px;font-weight:600;font-family:monospace;letter-spacing:1px;color:var(--text);}
+.modal-vin-btn{flex-shrink:0;background:var(--accent);border:none;color:#fff;padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'Noto Sans Georgian',sans-serif;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;transition:background 0.15s;}
+.modal-vin-btn:hover{background:var(--accent-hover);}
+.modal-vin-btn svg{width:14px;height:14px;fill:#fff;}
+.modal-vin-btn.copied{background:var(--green);}
+
 .modal-actions{display:flex;gap:10px;flex-wrap:wrap;}
 .modal-call{flex:1;min-width:180px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;padding:15px 24px;border-radius:100px;font-size:15px;font-weight:700;transition:background 0.18s;box-shadow:0 4px 16px rgba(214,58,26,0.22);}
 .modal-call:hover{background:var(--accent-hover);}
 .modal-call svg{width:18px;height:18px;fill:#fff;}
-.modal-drive{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--surface);color:var(--text2);text-decoration:none;padding:15px 20px;border-radius:100px;font-size:14px;font-weight:600;border:1.5px solid var(--border);transition:all 0.18s;}
-.modal-drive:hover{border-color:var(--accent);color:var(--accent);}
-.modal-drive svg{width:16px;height:16px;fill:currentColor;}
 
+/* LIGHTBOX */
 .lightbox{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,0.97);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.22s;}
 .lightbox.open{opacity:1;pointer-events:all;}
 .lb-img{max-width:96vw;max-height:93dvh;object-fit:contain;border-radius:3px;display:block;}
@@ -173,6 +205,7 @@ main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 .lb-prev{left:14px;}.lb-next{right:14px;}
 .lb-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.6);font-size:13px;}
 
+/* LOCATION */
 .location-wrap{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:44px 16px;}
 .location-inner{max-width:1100px;margin:0 auto;}
 .loc-title{font-size:20px;font-weight:700;margin-bottom:20px;}
@@ -197,11 +230,15 @@ main{max-width:1100px;margin:0 auto;padding:32px 16px 60px;}
 
 footer{text-align:center;padding:32px 20px;background:var(--surface);border-top:1px solid var(--border);}
 .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;}
-.footer-logo svg{width:44px;height:44px;}
-.footer-logo-text{text-align:left;}
 .footer-logo-text .t1{font-size:16px;font-weight:700;color:var(--text);line-height:1.1;}
 .footer-logo-text .t2{font-size:16px;font-weight:700;color:var(--accent);line-height:1.1;}
 footer p{font-size:13px;color:var(--text3);}
+
+/* MOBILE */
+@media(max-width:480px){
+  .cars-grid{grid-template-columns:1fr;}
+  .hero-stats{gap:20px;}
+}
 </style>
 </head>
 <body>
@@ -211,16 +248,11 @@ footer p{font-size:13px;color:var(--text3);}
     <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect width="100" height="100" rx="18" fill="#d63a1a"/>
       <path d="M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z" fill="white"/>
-      <circle cx="28" cy="74" r="10" fill="#fff"/>
-      <circle cx="72" cy="74" r="10" fill="#fff"/>
-      <circle cx="28" cy="74" r="5" fill="#d63a1a"/>
-      <circle cx="72" cy="74" r="5" fill="#d63a1a"/>
+      <circle cx="28" cy="74" r="10" fill="#fff"/><circle cx="72" cy="74" r="10" fill="#fff"/>
+      <circle cx="28" cy="74" r="5" fill="#d63a1a"/><circle cx="72" cy="74" r="5" fill="#d63a1a"/>
       <rect x="36" y="42" width="28" height="16" rx="4" fill="#d63a1a" opacity="0.5"/>
     </svg>
-    <div class="logo-text">
-      <span class="logo-text-top">ბათუმი</span>
-      <span class="logo-text-bottom">ავტო</span>
-    </div>
+    <div class="logo-text"><span class="t1">ბათუმი</span><span class="t2">ავტო</span></div>
   </a>
   <a href="tel:+995593716373" class="nav-call">
     <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
@@ -229,17 +261,13 @@ footer p{font-size:13px;color:var(--text3);}
 </nav>
 
 <div class="hero">
-  <div class="hero-logo">
-    <svg class="hero-logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <rect width="100" height="100" rx="18" fill="#d63a1a"/>
-      <path d="M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z" fill="white"/>
-      <circle cx="28" cy="74" r="10" fill="#fff"/>
-      <circle cx="72" cy="74" r="10" fill="#fff"/>
-      <circle cx="28" cy="74" r="5" fill="#d63a1a"/>
-      <circle cx="72" cy="74" r="5" fill="#d63a1a"/>
-      <rect x="36" y="42" width="28" height="16" rx="4" fill="#d63a1a" opacity="0.5"/>
-    </svg>
-  </div>
+  <svg class="hero-logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="18" fill="#d63a1a"/>
+    <path d="M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z" fill="white"/>
+    <circle cx="28" cy="74" r="10" fill="#fff"/><circle cx="72" cy="74" r="10" fill="#fff"/>
+    <circle cx="28" cy="74" r="5" fill="#d63a1a"/><circle cx="72" cy="74" r="5" fill="#d63a1a"/>
+    <rect x="36" y="42" width="28" height="16" rx="4" fill="#d63a1a" opacity="0.5"/>
+  </svg>
   <h1 class="hero-title">ბათუმი <span>ავტო</span></h1>
   <p class="hero-sub">ხარისხიანი ავტომობილები ბათუმში — ჯ. ქათამაძის 33</p>
   <a href="#cars" class="hero-cta">
@@ -313,25 +341,21 @@ footer p{font-size:13px;color:var(--text3);}
 
 <footer>
   <div class="footer-logo">
-    <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect width="100" height="100" rx="18" fill="#d63a1a"/>
       <path d="M14 72 L20 46 Q21 42 25 42 L75 42 Q79 42 80 46 L86 72 Z" fill="white"/>
-      <circle cx="28" cy="74" r="10" fill="#fff"/>
-      <circle cx="72" cy="74" r="10" fill="#fff"/>
-      <circle cx="28" cy="74" r="5" fill="#d63a1a"/>
-      <circle cx="72" cy="74" r="5" fill="#d63a1a"/>
+      <circle cx="28" cy="74" r="10" fill="#fff"/><circle cx="72" cy="74" r="10" fill="#fff"/>
+      <circle cx="28" cy="74" r="5" fill="#d63a1a"/><circle cx="72" cy="74" r="5" fill="#d63a1a"/>
       <rect x="36" y="42" width="28" height="16" rx="4" fill="#d63a1a" opacity="0.5"/>
     </svg>
-    <div class="footer-logo-text">
-      <div class="t1">ბათუმი</div>
-      <div class="t2">ავტო</div>
-    </div>
+    <div class="footer-logo-text"><div class="t1">ბათუმი</div><div class="t2">ავტო</div></div>
   </div>
   <p>ბათუმი, ჯემალ ქათამაძის 33</p>
   <p style="margin-top:4px;"><a href="tel:+995593716373" style="color:var(--accent);text-decoration:none;">+995 593 71 63 73</a></p>
   <p style="margin-top:14px;font-size:12px;color:var(--text3);">© 2025 ბათუმი ავტო</p>
 </footer>
 
+<!-- MODAL -->
 <div class="modal-bg" id="modal-bg">
   <div class="modal">
     <div class="gallery" id="m-gallery"></div>
@@ -344,13 +368,15 @@ footer p{font-size:13px;color:var(--text3);}
         <div class="modal-price" id="m-price"></div>
         <div class="modal-status-badge" id="m-status"></div>
       </div>
+      <div class="modal-tags" id="m-tags"></div>
       <div class="modal-specs" id="m-specs"></div>
-      <div class="modal-tags-row" id="m-tags"></div>
+      <div id="m-vin-wrap"></div>
       <div class="modal-actions" id="m-actions"></div>
     </div>
   </div>
 </div>
 
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
   <button class="lb-close" id="lb-close">✕</button>
   <button class="lb-prev" id="lb-prev">‹</button>
@@ -363,10 +389,45 @@ footer p{font-size:13px;color:var(--text3);}
 const SHEET_ID='1zp0Hq9t2i5VrVy5tbkbqxJub1ZdSshStoNsPgq6bMBY';
 const PHONE='tel:+995593716373';
 const PHONE_DISPLAY='+995 593 71 63 73';
-const TAG_MAP={'დაბალი გარბენი':'tag-green','საუკეთ':'tag-green','კარგ მდგ':'tag-green','ახლად':'tag-blue','ჰიბრიდ':'tag-blue','პრემიუმ':'tag-amber'};
-function tagCls(t){const l=t.toLowerCase();for(const[k,v]of Object.entries(TAG_MAP))if(l.includes(k.toLowerCase()))return v;return'tag-blue';}
+
+// Tag icon + color mapping
+const TAG_STYLES=[
+  {keys:['დაბალი გარბენი','low mileage'],cls:'tag-green',icon:'<svg viewBox="0 0 24 24"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.72L13 17v5h5l-1.52-1.52C19.23 18.57 22 15.11 22 12c0-5.18-3.94-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12c0 3.11 2.77 6.57 5.52 8.48L6 22h5V2.05z" fill="currentColor"/></svg>'},
+  {keys:['საუკეთესო მდგომარეობ','კარგ მდგომარეობ','იდეალურ'],cls:'tag-green',icon:'<svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/></svg>'},
+  {keys:['ახლად შემოტანილ','ახალი'],cls:'tag-blue',icon:'<svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.53 15.54.06 12.46.06c-1.64 0-3.13.8-4.06 2.02L12 5l3.6-2.92c.45-.37 1.01-.59 1.6-.59 1.4 0 2.5 1.12 2.5 2.5 0 .49-.12.95-.34 1.36L20 6zm-7.94 0h-1.12L7 3.06C5.88 4.05 5.18 5.45 5.18 7c0 .85.24 1.64.62 2.34L4 11H2v2h1.28L2 14.18V16h2v-1.82L8.64 9H9c2.2 0 4-1.79 4-4 0-.34-.05-.67-.12-1H12.06zm-5 8H4v2h3.06c.36.73.85 1.38 1.44 1.93L7.22 22H9l1.22-4.07c.59.05 1.19.07 1.78.07H14v-2h-2c-2.2 0-4.2-.75-5.74-2H11v-2H5v2h1.06c.2.36.44.69.7 1H7.06z" fill="currentColor"/></svg>'},
+  {keys:['ჰიბრიდ','hybrid','electric','ელექტრო'],cls:'tag-blue',icon:'<svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z" fill="currentColor"/></svg>'},
+  {keys:['პრემიუმ','premium','luxury'],cls:'tag-amber',icon:'<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>'},
+  {keys:['სუფთა ისტო','clean history'],cls:'tag-purple',icon:'<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/></svg>'},
+];
+
+function getTagStyle(t){
+  const l=t.toLowerCase();
+  for(const s of TAG_STYLES){
+    if(s.keys.some(k=>l.includes(k.toLowerCase())))return s;
+  }
+  return{cls:'tag-gray',icon:''};
+}
+
+function renderTags(tags){
+  return tags.map(t=>{
+    const s=getTagStyle(t);
+    return`<span class="tag ${s.cls}">${s.icon}${t}</span>`;
+  }).join('');
+}
+
 function phonesvg(sz){return`<svg viewBox="0 0 24 24" style="width:${sz}px;height:${sz}px;fill:#fff;flex-shrink:0"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>`;}
+function copyIcon(){return`<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>`;}
+
 function parsePhotos(str){if(!str)return[];return str.split(/[,\n]/).map(s=>s.trim()).filter(s=>s.startsWith('http'));}
+
+function copyVin(vin,btn){
+  navigator.clipboard.writeText(vin).then(()=>{
+    btn.classList.add('copied');
+    const orig=btn.innerHTML;
+    btn.innerHTML='✓ დაკოპირდა';
+    setTimeout(()=>{btn.classList.remove('copied');btn.innerHTML=orig;},2000);
+  });
+}
 
 let cars=[],activeFilter='all',lbPhotos=[],lbIdx=0,modalPhotos=[],modalIdx=0;
 
@@ -378,17 +439,23 @@ async function loadCars(){
     const json=JSON.parse(txt.replace(/^[^\(]+\(/,'').replace(/\);\s*$/,''));
     cars=json.table.rows.map(row=>{
       const v=i=>(row.c[i]&&row.c[i].v!=null)?String(row.c[i].v).trim():'';
-      const tags=v(7).split(/[,،\n]/).map(t=>t.trim()).filter(Boolean);
-      const sold=v(8).toLowerCase().includes('გაყიდ')||v(8).toLowerCase().includes('sold');
-      const photos=parsePhotos(v(11)||v(10));
-      const mainPhoto=v(10);
-      return{name:v(0),year:v(1),price:v(2),mileage:v(3),transmission:v(4),engine:v(5),color:v(6),tags,sold,statusLabel:sold?'გაყიდულია':'აქტიურია',driveUrl:v(9),mainPhoto,photos};
+      // A=მარკა/მოდელი B=ფასი C=გარბენი D=გადაცემ E=ძრავი F=ფერი G=თაგები H=სტატუსი I=მთ.ფოტო J=ყველა ფოტო K=VIN
+      const tags=v(6).split(/[,،\n]/).map(t=>t.trim()).filter(Boolean);
+      const sold=v(7).toLowerCase().includes('გაყიდ')||v(7).toLowerCase().includes('sold');
+      const photos=parsePhotos(v(9)||v(8));
+      return{
+        name:v(0),price:v(1),mileage:v(2),transmission:v(3),
+        engine:v(4),color:v(5),tags,sold,
+        statusLabel:sold?'გაყიდულია':'აქტიურია',
+        mainPhoto:v(8),photos,vin:v(10),
+      };
     }).filter(c=>c.name);
+
     document.getElementById('active-count').textContent=cars.filter(c=>!c.sold).length;
     document.getElementById('car-count').textContent=`სულ ${cars.length} ავტომობილი`;
     buildFilters();renderCars();
   }catch(e){
-    document.getElementById('cars-grid').innerHTML=`<div class="loading-wrap"><p style="color:var(--accent)">მონაცემები ვერ ჩაიტვირთა. შეამოწმეთ Sheets-ის გაზიარება.</p></div>`;
+    document.getElementById('cars-grid').innerHTML=`<div class="loading-wrap"><p style="color:var(--accent)">მონაცემები ვერ ჩაიტვირთა.</p></div>`;
   }
 }
 
@@ -414,6 +481,20 @@ document.querySelectorAll('.f-btn').forEach(b=>b.addEventListener('click',()=>se
 
 function getThumb(car){return car.photos&&car.photos.length>0?car.photos[0]:car.mainPhoto||'';}
 
+function vinHtml(vin,small){
+  if(!vin)return'';
+  if(small){
+    return`<div class="vin-row">
+      <div><div class="vin-label">VIN კოდი</div><div class="vin-code">${vin}</div></div>
+      <button class="vin-copy" onclick="event.stopPropagation();copyVin('${vin}',this)" title="კოპირება">${copyIcon()}</button>
+    </div>`;
+  }
+  return`<div class="modal-vin">
+    <div class="modal-vin-info"><div class="modal-vin-label">VIN კოდი</div><div class="modal-vin-code">${vin}</div></div>
+    <button class="modal-vin-btn" onclick="copyVin('${vin}',this)">${copyIcon()}კოპირება</button>
+  </div>`;
+}
+
 function renderCars(){
   let list=activeFilter==='active-only'?cars.filter(c=>!c.sold):activeFilter==='all'?cars:cars.filter(c=>c.tags.includes(activeFilter));
   const grid=document.getElementById('cars-grid');
@@ -424,20 +505,21 @@ function renderCars(){
     const pc=car.photos?car.photos.length:0;
     return`<div class="car-card${car.sold?' sold':''}" data-idx="${idx}">
       <div class="card-img">
-        ${thumb?`<img src="${thumb}" alt="${car.name}" loading="lazy">`:`<div class="img-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg><span>ფოტო არ არის</span></div>`}
+        ${thumb?`<img src="${thumb}" alt="${car.name}" loading="lazy">`:`<div class="img-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg><span>ფოტო</span></div>`}
         <div class="status-badge ${car.sold?'status-sold':'status-active'}"><span class="dot ${car.sold?'dot-sold':'dot-active'}"></span>${car.statusLabel}</div>
         ${car.sold?`<div class="sold-overlay"><div class="sold-stamp">გაყიდულია</div></div>`:''}
         ${pc>0?`<div class="photo-icon"><svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>${pc} ფოტო</div>`:''}
       </div>
       <div class="card-body">
         <div class="card-name">${car.name}</div>
-        <div class="card-year">${car.year}</div>
+        ${car.tags.length?`<div class="tags-row">${renderTags(car.tags)}</div>`:''}
         <div class="card-specs">
-          ${car.mileage?`<div><span class="spec-l">გარბენი</span><div class="spec-v">${car.mileage}</div></div>`:''}
-          ${car.transmission?`<div><span class="spec-l">გადაცემათა</span><div class="spec-v">${car.transmission}</div></div>`:''}
-          ${car.engine?`<div><span class="spec-l">ძრავი</span><div class="spec-v">${car.engine}</div></div>`:''}
-          ${car.color?`<div><span class="spec-l">ფერი</span><div class="spec-v">${car.color}</div></div>`:''}
+          ${car.mileage?`<div class="spec-item"><span class="spec-l">გარბენი</span><div class="spec-v">${car.mileage}</div></div>`:''}
+          ${car.transmission?`<div class="spec-item"><span class="spec-l">გადაცემათა</span><div class="spec-v">${car.transmission}</div></div>`:''}
+          ${car.engine?`<div class="spec-item"><span class="spec-l">ძრავი</span><div class="spec-v">${car.engine}</div></div>`:''}
+          ${car.color?`<div class="spec-item"><span class="spec-l">ფერი</span><div class="spec-v">${car.color}</div></div>`:''}
         </div>
+        ${vinHtml(car.vin,true)}
         <div class="card-footer">
           <div class="${car.sold?'card-sold-price':'card-price'}">${car.price||'—'}</div>
           ${car.sold?`<div class="sold-label">✓ გაყიდულია</div>`:`<a href="${PHONE}" class="call-btn" onclick="event.stopPropagation()">${phonesvg(13)}დარეკვა</a>`}
@@ -452,26 +534,30 @@ function openModal(idx){
   const car=cars[idx];
   modalPhotos=car.photos&&car.photos.length>0?car.photos:(car.mainPhoto?[car.mainPhoto]:[]);
   modalIdx=0;
-  document.getElementById('m-name').textContent=`${car.name} ${car.year}`;
+  document.getElementById('m-name').textContent=car.name;
   document.getElementById('m-price').textContent=car.price||'ფასი: დარეკეთ';
   document.getElementById('m-status').innerHTML=`<span class="dot ${car.sold?'dot-sold':'dot-active'}" style="display:inline-block"></span><span style="color:${car.sold?'var(--sold)':'var(--green)'};">${car.statusLabel}</span>`;
+  document.getElementById('m-tags').innerHTML=car.tags.length?renderTags(car.tags):'';
   buildGallery(car);
-  document.getElementById('m-specs').innerHTML=[{l:'გარბენი',v:car.mileage},{l:'გადაცემათა',v:car.transmission},{l:'ძრავი',v:car.engine},{l:'ფერი',v:car.color},{l:'წელი',v:car.year}].filter(s=>s.v).map(s=>`<div class="m-spec"><div class="spec-l">${s.l}</div><div class="spec-v">${s.v}</div></div>`).join('');
-  document.getElementById('m-tags').innerHTML=car.tags.map(t=>`<span class="tag ${tagCls(t)}">${t}</span>`).join('');
+  document.getElementById('m-specs').innerHTML=[
+    {l:'გარბენი',v:car.mileage},{l:'გადაცემათა',v:car.transmission},
+    {l:'ძრავი',v:car.engine},{l:'ფერი',v:car.color}
+  ].filter(s=>s.v).map(s=>`<div class="m-spec"><div class="spec-l">${s.l}</div><div class="spec-v">${s.v}</div></div>`).join('');
+  document.getElementById('m-vin-wrap').innerHTML=vinHtml(car.vin,false);
   document.getElementById('m-actions').innerHTML=car.sold
     ?`<div style="color:var(--sold);font-weight:600;padding:12px 0;">✓ ეს ავტომობილი გაყიდულია</div>`
-    :`<a href="${PHONE}" class="modal-call">${phonesvg(18)}დამირეკე — ${PHONE_DISPLAY}</a>${car.driveUrl?`<a href="${car.driveUrl}" target="_blank" class="modal-drive"><svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>ყველა ფოტო Drive-ზე</a>`:''}`;
+    :`<a href="${PHONE}" class="modal-call">${phonesvg(18)}დამირეკე — ${PHONE_DISPLAY}</a>`;
   document.getElementById('modal-bg').classList.add('open');
   document.body.style.overflow='hidden';
 }
 
 function buildGallery(car){
-  const gallery=document.getElementById('m-gallery');
-  if(!modalPhotos.length){gallery.innerHTML=`<div class="g-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>ფოტო არ არის</span></div>`;return;}
-  const showNav=modalPhotos.length>1;
-  gallery.innerHTML=`<div class="g-main-wrap" id="g-wrap"><img class="g-main-img" id="g-main" src="${modalPhotos[0]}" alt="${car.name}">${showNav?`<button class="g-nav g-prev" id="g-prev">‹</button><button class="g-nav g-next" id="g-next">›</button>`:''}<div class="g-counter" id="g-counter" style="display:${showNav?'block':'none'}">${modalPhotos.length>1?`1 / ${modalPhotos.length}`:''}</div></div>${modalPhotos.length>1?`<div class="thumbs-row">${modalPhotos.map((p,i)=>`<img class="thumb${i===0?' active':''}" src="${p}" data-i="${i}" alt="">`).join('')}</div>`:''}`;
+  const g=document.getElementById('m-gallery');
+  if(!modalPhotos.length){g.innerHTML=`<div class="g-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>ფოტო არ არის</span></div>`;return;}
+  const nav=modalPhotos.length>1;
+  g.innerHTML=`<div class="g-main-wrap" id="g-wrap"><img class="g-main-img" id="g-main" src="${modalPhotos[0]}" alt="">${nav?`<button class="g-nav g-prev" id="g-prev">‹</button><button class="g-nav g-next" id="g-next">›</button>`:''}<div class="g-counter" id="g-counter"${nav?'':' style="display:none"'}>${nav?`1 / ${modalPhotos.length}`:''}</div></div>${nav?`<div class="thumbs-row">${modalPhotos.map((p,i)=>`<img class="thumb${i===0?' active':''}" src="${p}" data-i="${i}" alt="">`).join('')}</div>`:''}`;
   document.getElementById('g-wrap').addEventListener('click',e=>{if(!e.target.classList.contains('g-nav'))openLightbox(modalPhotos,modalIdx);});
-  if(showNav){
+  if(nav){
     document.getElementById('g-prev').addEventListener('click',e=>{e.stopPropagation();galleryNav(-1);});
     document.getElementById('g-next').addEventListener('click',e=>{e.stopPropagation();galleryNav(1);});
   }
@@ -500,7 +586,7 @@ document.addEventListener('keydown',e=>{
   else if(document.getElementById('modal-bg').classList.contains('open')){if(e.key==='Escape')closeModal();if(e.key==='ArrowLeft')galleryNav(-1);if(e.key==='ArrowRight')galleryNav(1);}
 });
 let tx=0;
-document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;});
+document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
 document.addEventListener('touchend',e=>{
   const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)<50)return;
   if(document.getElementById('lightbox').classList.contains('open'))lbNav(dx<0?1:-1);
